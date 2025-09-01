@@ -23,6 +23,8 @@ jobs:
       - run: npm run build
       - name: List build output
         run: ls -la dist/
+      - name: Check index.html content
+        run: cat dist/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
