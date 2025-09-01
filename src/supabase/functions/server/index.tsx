@@ -1,7 +1,7 @@
-import { Hono } from 'npm:hono'
-import { cors } from 'npm:hono/cors'
-import { logger } from 'npm:hono/logger'
-import { createClient } from 'npm:@supabase/supabase-js@2'
+import { Hono } from 'hono'
+import { cors } from 'hono/cors'
+import { logger } from 'hono/logger'
+import { createClient } from '@supabase/supabase-js'
 import * as kv from './kv_store.tsx'
 
 type Registration = {
@@ -60,7 +60,7 @@ async function sendThankYouEmail(name: string, email: string) {
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>تشکر از ثبت‌نام</title>
-          <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght;400;500;600;700;800;900&display=swap" rel="stylesheet">
         </head>
         <body style="margin: 0; padding: 20px; font-family: 'Vazirmatn', 'Tahoma', Arial, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; direction: rtl; text-align: right;">
           <div style="max-width: 600px; margin: 40px auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); direction: rtl; border: 1px solid rgba(255, 255, 255, 0.2);">
@@ -359,7 +359,7 @@ app.post('/make-server-19150099/test-email-direct', async (c) => {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght;400;500;600;700;800;900&display=swap" rel="stylesheet">
         </head>
         <body style="font-family: 'Vazirmatn', 'Tahoma', Arial, sans-serif; direction: rtl; text-align: right; padding: 20px; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; margin: 0;">
           <div style="max-width: 500px; margin: 40px auto; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); direction: rtl;">
