@@ -33,7 +33,7 @@ export function InstructorProfile() {
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden ring-4 ring-purple-200 shadow-xl">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1731951039706-0e793240bb32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTY0MTYzMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src="/images/profile-picture.jpg"
                     alt="میثم زارعی"
                     className="w-full h-full object-cover"
                   />
