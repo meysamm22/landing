@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
 import { Calendar, Clock, Video, Globe, DollarSign } from "lucide-react";
