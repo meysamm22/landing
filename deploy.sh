@@ -1,8 +1,20 @@
 #!/bin/bash
 
-echo "🚀 Starting safe deployment process..."
+echo "🚀 Starting deployment from gh-pages branch..."
 
-# Build the project
+# Check if we're on gh-pages branch
+CURRENT_BRANCH=$(git branch --show-current)
+if [ "$CURRENT_BRANCH" != "gh-pages" ]; then
+    echo "❌ Error: This script must be run from the gh-pages branch!"
+    echo "Current branch: $CURRENT_BRANCH"
+    exit 1
+fi
+
+# Install dependencies if needed
+echo "📦 Installing dependencies..."
+npm install
+
+# Build the project from current branch
 echo "📦 Building the project..."
 npm run build
 
@@ -13,20 +25,12 @@ fi
 
 echo "✅ Build completed successfully!"
 
-# Create a temporary directory for deployment
-echo "📁 Preparing deployment files..."
-TEMP_DIR=$(mktemp -d)
-cp -r dist/* "$TEMP_DIR/"
-
-# Copy built files to root
-echo "📋 Copying built files..."
-cp -r "$TEMP_DIR"/* .
-rm -rf "$TEMP_DIR"
-
-# Add all files
+# Add all changes including the built files
+echo "📋 Adding all changes..."
 git add .
 
 # Commit the deployment
+echo "💾 Committing changes..."
 git commit -m "Deploy to GitHub Pages - $(date)"
 
 # Push to gh-pages branch
@@ -35,6 +39,5 @@ git push origin gh-pages --force
 
 echo "✅ Deployment completed successfully!"
 echo "🌐 Your site should be available at: https://landing.meysamzarei.com"
-echo "📝 Remember to set GitHub Pages source to 'gh-pages' branch in your repository settings"
 echo ""
-echo "💡 Your source files are completely safe and unchanged!"
+echo "💡 Your component changes are now live!"
