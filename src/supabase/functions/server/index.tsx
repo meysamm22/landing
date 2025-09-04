@@ -81,10 +81,10 @@ async function sendThankYouEmail(name: string, email: string) {
               <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-right: 4px solid #0ea5e9; padding: 20px; margin: 25px 0; border-radius: 12px; direction: rtl; box-shadow: 0 2px 8px rgba(14, 165, 233, 0.1);">
                 <h3 style="margin-top: 0; color: #0ea5e9; direction: rtl; text-align: right;">📅 جزئیات ورکشاپ:</h3>
                 <ul style="margin: 0; direction: rtl; text-align: right; padding-right: 20px; padding-left: 0;">
-                  <li style="direction: rtl; text-align: right; margin: 8px 0;"><strong>تاریخ:</strong> یکشنبه ۱۵ مهر ۱۴۰۳</li>
+                  <li style="direction: rtl; text-align: right; margin: 8px 0;"><strong>تاریخ:</strong> یکشنبه ۲۱ سپتامبر ۲۰۲۵</li>
                   <li style="direction: rtl; text-align: right; margin: 8px 0;"><strong>ساعت:</strong> ۱۹:۰۰ الی ۲۱:۰۰</li>
                   <li style="direction: rtl; text-align: right; margin: 8px 0;"><strong>مدت:</strong> ۲ ساعت</li>
-                  <li style="direction: rtl; text-align: right; margin: 8px 0;"><strong>نحوه برگزاری:</strong> آنلاین در اسکایپ</li>
+                  <li style="direction: rtl; text-align: right; margin: 8px 0;"><strong>نحوه برگزاری:</strong> آنلاین در گوگل میت</li>
                 </ul>
               </div>
               
@@ -122,7 +122,7 @@ async function sendThankYouEmail(name: string, email: string) {
             <!-- Footer -->
             <div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 30px 20px; text-align: center; font-size: 14px; color: #64748b; direction: rtl; border-top: 1px solid rgba(0, 0, 0, 0.05);">
               <p style="direction: rtl; text-align: center; margin: 5px 0;">این ایمیل به دلیل ثبت‌نام شما در ورکشاپ رایگان وب‌سازی ارسال شده است.</p>
-              <p style="direction: rtl; text-align: center; margin: 5px 0;">© ۱۴۰۳ ورکشاپ وب‌سازی. تمامی حقوق محفوظ است.</p>
+              <p style="direction: rtl; text-align: center; margin: 5px 0;">© ۲۰۲۵ ورکشاپ وب‌سازی. تمامی حقوق محفوظ است.</p>
             </div>
           </div>
         </body>

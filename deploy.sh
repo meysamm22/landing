@@ -18,18 +18,6 @@ echo "📁 Preparing deployment files..."
 TEMP_DIR=$(mktemp -d)
 cp -r dist/* "$TEMP_DIR/"
 
-# Create or reset gh-pages branch
-echo "🌿 Setting up deployment branch..."
-if git show-ref --verify --quiet refs/heads/gh-pages; then
-    # Branch exists, reset it
-    git checkout gh-pages
-    git reset --hard
-    git clean -fxd
-else
-    # Create new branch
-    git checkout --orphan gh-pages
-fi
-
 # Copy built files to root
 echo "📋 Copying built files..."
 cp -r "$TEMP_DIR"/* .
