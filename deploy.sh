@@ -33,10 +33,6 @@ git commit -m "Deploy to GitHub Pages - $(date)"
 echo "📤 Pushing to gh-pages branch..."
 git push origin gh-pages --force
 
-# Switch back to main branch
-echo "🔄 Switching back to main branch..."
-git checkout main
-
 echo "✅ Deployment completed successfully!"
 echo "🌐 Your site should be available at: https://landing.meysamzarei.com"
 echo "📝 Remember to set GitHub Pages source to 'gh-pages' branch in your repository settings"
