@@ -25,6 +25,11 @@ fi
 
 echo "✅ Build completed successfully!"
 
+# Copy built files to root for GitHub Pages
+echo "📋 Copying built files to root..."
+cp dist/index.html index.html
+cp -r dist/assets/* assets/
+
 # Add all changes including the built files
 echo "📋 Adding all changes..."
 git add .
@@ -35,7 +40,7 @@ git commit -m "Deploy to GitHub Pages - $(date)"
 
 # Push to gh-pages branch
 echo "📤 Pushing to gh-pages branch..."
-git push origin gh-pages --force
+git push origin gh-pages
 
 echo "✅ Deployment completed successfully!"
 echo "🌐 Your site should be available at: https://landing.meysamzarei.com"
