@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
 import { Calendar, Clock, Video, Globe, DollarSign } from "lucide-react";
@@ -7,17 +8,17 @@ export function WorkshopDetails() {
     {
       icon: Calendar,
       label: "تاریخ برگزاری",
-      value: "۱۵ بهمن ۱۴۰۴ (شنبه)"
+      value: "یکشنبه ۲۱ سپتامبر ۲۰۲۵"
     },
     {
       icon: Clock,
       label: "زمان",
-      value: "۱۸:۰۰ تا ۲۰:۰۰ (وقت تهران)"
+      value: "۱۹:۰۰ الی ۲۱:۰۰ (بوقت برلین)"
     },
     {
       icon: Video,
       label: "پلتفرم",
-      value: "آنلاین - Zoom Meeting"
+      value: "آنلاین - گوگل میت"
     },
     {
       icon: Globe,
